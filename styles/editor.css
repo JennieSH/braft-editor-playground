@@ -1,0 +1,11 @@
+.editor a {
+  @apply text-blue-500 shadow-none border-none;
+}
+
+.editor-bar {
+  @apply flex flex-wrap items-center shadow-none;
+}
+
+.editor-bar .control-item.button.active {
+  @apply text-pink-300;
+}
