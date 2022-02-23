@@ -1,0 +1,61 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
+    "sourceType": "module", // Allows for the use of imports
+    "ecmaFeatures": {
+      "jsx": true // Allows for the parsing of JSX
+    },
+    "useJSXTextNode": true // If this is false, the parser creates the AST of JSX texts as the legacy style
+  },
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended", 
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react-hooks/recommended", 
+    "plugin:@typescript-eslint/recommended", 
+    "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+    "plugin:prettier/recommended", // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    "prettier",
+    "prettier/react"  // THIS OVERRIDES SPECIFIC REACT RULES THAT CONFLICT WITH PRETTIER
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React which u install to use.
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "object-curly-spacing": ["error", "always"],
+    // "react/jsx-curly-spacing": ["error", {"when": "always"}],
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off", // Can use JSX without import React
+    "react-hooks/rules-of-hooks": "error", 
+    "react-hooks/exhaustive-deps": "warn", 
+    "jsx-a11y/anchor-is-valid": "off", // Have href attribute is 「 not 」 required on an anchor (<a>), so Link can use (<Link> will generates href attribute).
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/member-delimiter-style": "warn",
+    "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-use-before-define": "error",
+    "no-console": "off",
+    "import/no-unresolved": "off"
+  }
+}
