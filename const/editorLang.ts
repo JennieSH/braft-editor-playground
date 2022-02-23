@@ -1,10 +1,11 @@
 const languageConfig = {
+  // braft-editor
   base: {
     remove: '刪除',
     cancel: '取消',
     confirm: '確定',
     inert: '插入',
-    width: '宽度',
+    width: '寬度',
     height: '高度'
   },
   controls: {
@@ -43,12 +44,12 @@ const languageConfig = {
     orderedList: '有序列表',
     unorderedList: '無序列表',
     blockQuote: '引用',
-    code: '代碼',
-    link: '鏈接',
-    unlink: '清除鏈接',
+    code: '程式碼',
+    link: '建立連結',
+    unlink: '清除超連結',
     hr: '水平線',
-    media: '媒體',
-    mediaLibirary: '媒體庫',
+    media: '圖片',
+    mediaLibirary: '圖片庫',
     emoji: 'emoji',
     fullscreen: '全螢幕',
     exitFullscreen: '退出全螢幕'
@@ -68,9 +69,9 @@ const languageConfig = {
     embedTitle: '嵌入式媒體'
   },
   media: {
-    image: '圖像',
+    image: '圖片',
     video: '影片',
-    audio: '音頻',
+    audio: '音源',
     embed: '嵌入式媒體'
   },
   // braft-finder
@@ -80,24 +81,21 @@ const languageConfig = {
   width: '寬度',
   height: '高度',
   image: '圖片',
-  video: '視頻',
-  audio: '音頻',
+  video: '影片',
+  audio: '音源',
   embed: '嵌入式媒體',
   caption: '媒體庫',
-  dragTip: '點擊或拖動文件至此',
-  dropTip: '放開鼠標以上傳',
+  dragTip: '點擊或拖動圖片至此',
+  dropTip: '放開滑鼠後上傳',
   selectAll: '選擇全部',
   deselect: '取消選擇',
   removeSelected: '刪除選中項目',
   externalInputPlaceHolder: '資源名稱|資源地址',
   externalInputTip: '使用“|”分隔資源名稱和資源地址',
-  addLocalFile: '添加本地資源',
-  addExternalSource: '添加網絡資源',
+  addLocalFile: '新增本地資源',
+  addExternalSource: '新增網絡資源',
   unnamedItem: '未命名項目',
   confirmInsert: '插入選中項目'
 }
 
-type LanguageConfigType = keyof typeof languageConfig
-
 export { languageConfig }
-export type { LanguageConfigType }
