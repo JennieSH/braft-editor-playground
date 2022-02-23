@@ -1,7 +1,8 @@
 // import { useState } from "react";
+import "@/styles/index.css";
 
 function App() {
-  return <div className="App">hello</div>;
+  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 }
 
 export default App;
