@@ -55,11 +55,11 @@ const languageConfig = {
     exitFullscreen: '退出全螢幕'
   },
   linkEditor: {
-    textInputPlaceHolder: '輸入鏈接文字',
-    linkInputPlaceHolder: '輸入鏈接網址',
-    inputWithEnterPlaceHolder: '輸入鏈接地址並確定',
+    textInputPlaceHolder: '輸入連結文字',
+    linkInputPlaceHolder: '輸入連結網址',
+    inputWithEnterPlaceHolder: '輸入連結地址並確定',
     openInNewWindow: '在新視窗打開',
-    removeLink: '移除鏈接'
+    removeLink: '移除連結'
   },
   audioPlayer: {
     title: '播放音源'
