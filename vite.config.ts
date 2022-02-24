@@ -12,9 +12,12 @@ export default defineConfig({
       "@/styles": path.resolve(__dirname, "./src/styles"),
       "@/utils": path.resolve(__dirname, "./src/utils"),
       "@/assets": path.resolve(__dirname, "./src/assets"),
-      "@/pages": path.resolve(__dirname, "./src/pages"),
+      "@/const": path.resolve(__dirname, "./src/const"),
       "@/routes": path.resolve(__dirname, "./src/routes"),
       "@/hooks": path.resolve(__dirname, "./src/hooks")
     }
+  },
+  define: {
+    global: "window"
   }
 });
