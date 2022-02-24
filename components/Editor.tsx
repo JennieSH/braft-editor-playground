@@ -3,7 +3,7 @@ import { ContentUtils } from 'braft-utils'
 import { Dispatch, memo, SetStateAction, useCallback, useState } from 'react'
 
 import { languageConfig } from '../const/editorLang'
-import ImgUploaderBtn from './ImgUploaderBtn'
+import ImgUploadBtn from './ImgUploadBtn'
 
 interface Props {
   text: string
@@ -43,7 +43,6 @@ const Editor = ({ text, setText }: Props) => {
       value={editorState}
       onChange={onEditorStateChange}
       controlBarClassName="editor-bar"
-      // controlBarStyle={{ boxShadow: 'none' }}
       contentClassName="editor"
       placeholder="# braft editor"
       controls={[
@@ -68,7 +67,7 @@ const Editor = ({ text, setText }: Props) => {
           key: 'upload-img',
           type: 'button',
           title: '圖呢 ಠ·ಠ?',
-          text: <ImgUploaderBtn uploadCallback={onUploadImg} />
+          text: <ImgUploadBtn uploadCallback={onUploadImg} />
         }
       ]}
       language={() => languageConfig}

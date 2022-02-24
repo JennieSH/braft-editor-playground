@@ -4,7 +4,7 @@ interface Props {
   uploadCallback: (key: string) => void
 }
 
-const ImgUploaderBtn = ({ uploadCallback }: Props) => {
+const ImgUploadBtn = ({ uploadCallback }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null)
 
   const onPick = useCallback(() => {
@@ -35,4 +35,4 @@ const ImgUploaderBtn = ({ uploadCallback }: Props) => {
   )
 }
 
-export default memo(ImgUploaderBtn)
+export default memo(ImgUploadBtn)
